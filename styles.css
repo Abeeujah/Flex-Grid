@@ -151,7 +151,7 @@ a{
     background-color: black;
 }
 
-@media (min-width: 481px) and (max-width: 1440px) {
+@media screen and (max-width: 1440px) {
     .flex-cont {
         display: flex;
         flex-direction: row;
@@ -167,14 +167,21 @@ a{
    
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media screen and (max-width: 375px) {
     .flex-cont{
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         margin: 5rem;
         height: max-content;
         width: fit-content;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .orange, .cyan, .dark{
+        height: auto;
     }
 }
